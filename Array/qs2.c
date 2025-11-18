@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int n;
+    int n, sum=0;
     printf("Enter the array size:");
     scanf("%d", &n);
     int arr[n];
@@ -9,15 +9,12 @@ void main()
     for(int i=0; i<n; i++)
     {
         scanf("%d", &arr[i]);
-    }
-    printf("The array in reverse order:\n");
-    for(int i=n-1; i>=0; i--)
-    {
-        printf("%d\t", arr[i]);
+        sum+=arr[i];
+        printf("\nThe sum of all the integers in the array: %d", sum);
+
     }
 
 
 
 
 }
-

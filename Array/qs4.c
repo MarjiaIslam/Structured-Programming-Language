@@ -1,7 +1,8 @@
 #include<stdio.h>
 void main()
 {
-    int n;
+
+    int i,n, sum=0;
     printf("Enter the array size:");
     scanf("%d", &n);
     int arr[n];
@@ -9,15 +10,14 @@ void main()
     for(int i=0; i<n; i++)
     {
         scanf("%d", &arr[i]);
+        if(i%2==0){
+            sum+=arr[i];
+        }
     }
-    printf("The array in reverse order:\n");
-    for(int i=n-1; i>=0; i--)
-    {
-        printf("%d\t", arr[i]);
-    }
+        printf("\nThe even indexed sum:%d", sum);
+
 
 
 
 
 }
-
